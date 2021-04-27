@@ -23,7 +23,7 @@ export default function Home() {
           />
           <BalanceContainer>
             <BalanceTitle>Meu saldo</BalanceTitle>
-            <Balance>R$100.000,00</Balance>
+            <Balance>R$ 1.000.000,00</Balance>
           </BalanceContainer>
           <AntDesign name="gift" size={30} color="#10c86e" />
         </Header>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Feather } from '@expo/vector-icons';
+import { Feather, MaterialCommunityIcons, AntDesign } from '@expo/vector-icons';
 
 import {
   Container,
@@ -17,6 +17,9 @@ import {
   Value,
   Divider,
   Date,
+  Actions,
+  Option,
+  OptionLabel,
 } from './styles';
 
 import avatar from '../../images/avatar.png';
@@ -32,19 +35,33 @@ export const Activities = () => {
         <CardHeader>
           <Avatar source={avatar} />
           <Description>
-            <Bold>Você</Bold> pagou a <Bold>@igorheije</Bold>
+            <Bold>Você</Bold> pagou a <Bold>@pedroralile</Bold>
           </Description>
         </CardHeader>
         <CardBody>
-          <UserName>IgorHeije</UserName>
+          <UserName>Pedro Ralile</UserName>
         </CardBody>
         <CardFooter>
           <Details>
-            <Value>R$ 0,00</Value>
+            <Value>R$ 10.000,00</Value>
             <Divider />
             <Feather name="lock" color="white" />
-            <Date>há dois anos</Date>
+            <Date>há um min</Date>
           </Details>
+          <Actions>
+            <Option>
+              <MaterialCommunityIcons
+                name="comment-outline"
+                size={14}
+                color="#fff"
+              />
+              <OptionLabel>0</OptionLabel>
+            </Option>
+            <Option>
+              <AntDesign name="heart" size={14} color="#fff" />
+              <OptionLabel>0</OptionLabel>
+            </Option>
+          </Actions>
         </CardFooter>
       </Card>
     </Container>

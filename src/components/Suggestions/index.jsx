@@ -13,7 +13,7 @@ const itens = [
   {
     key: String(Math.random()),
     img: img1,
-    label: 'Doações',
+    label: 'Recarga',
   },
   {
     key: String(Math.random()),
